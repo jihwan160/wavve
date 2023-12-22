@@ -1,16 +1,13 @@
-import './App.scss';
-import Header from './component/Header';
+import Home from './Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div id='wrap'>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Header />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
