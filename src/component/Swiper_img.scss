@@ -4,9 +4,11 @@
 }
 
 .swiper {
+  overflow: inherit !important;
   @include w1240();
-  height: 580px;
   .swiper_slide {
+    border-radius: 12px;
+    overflow: hidden;
     .img {
       width: 100%;
     }

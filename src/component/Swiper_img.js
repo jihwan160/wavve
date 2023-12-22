@@ -12,7 +12,7 @@ function Swiper_img({content}) {
   return (
     <Swiper 
       modules={[Navigation, Pagination]}
-      spaceBetween={10}
+      spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}

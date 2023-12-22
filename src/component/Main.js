@@ -1,9 +1,13 @@
 import React from 'react'
 import Swiper_img from './Swiper_img';
 
+import './Main.scss'
+
 function Main() {
   return (
-    <Swiper_img content={swiper_img}  />
+    <main>
+      <Swiper_img content={swiper_img} />
+    </main>
   )
 }
 
