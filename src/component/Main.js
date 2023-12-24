@@ -2,11 +2,20 @@ import React from 'react'
 import Swiper_img from './Swiper_img';
 
 import './Main.scss'
+import Fetch_api_1 from '../api_1/Fetch_api_1';
+
+import { api_Key } from '../myApi';
 
 function Main() {
+
+  const url_1 = `http://api.themoviedb.org/3/trending/movie/week?api_key=${api_Key}&language=ko-KR`
+
   return (
     <main>
-      <Swiper_img content={swiper_img} />
+      <div className='swiper_img'>
+        <Swiper_img content={swiper_img} />
+      </div>
+      <Fetch_api_1 url_1={url_1}/>
     </main>
   )
 }
