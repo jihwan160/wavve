@@ -15,7 +15,9 @@ function Main() {
       <div className='swiper_img'>
         <Swiper_img content={swiper_img} />
       </div>
-      <Fetch_api_1 url_1={url_1}/>
+      <div className='api_swiper'>
+        <Fetch_api_1 url_1={url_1}/>
+      </div>
     </main>
   )
 }
