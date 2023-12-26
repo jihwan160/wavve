@@ -7,7 +7,7 @@ import './Fetch_api_1.scss'
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Fetch_api_1({url_1}) {
   
@@ -41,8 +41,8 @@ function Fetch_api_1({url_1}) {
         {movies.map((movie) => {
           return (
             <SwiperSlide key={movie.id} className='sec_swiper_slide'>
-              <Link to='/'>
-                <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+              <Link to='/Detail' state={{movie: movie}}>
+                <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/>
               </Link>
             </SwiperSlide>
         )
