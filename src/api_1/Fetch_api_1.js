@@ -12,7 +12,7 @@ import { Link, useNavigate } from 'react-router-dom';
 function Fetch_api_1({url_1}) {
   
   const [movies, setMovies] = useState([])
-
+  
   const option = {
     method: 'GET',
     headers: {
@@ -27,7 +27,7 @@ function Fetch_api_1({url_1}) {
       setMovies(response.results)
     })
   }, []);
-
+  
   return (
     <>
       <h1 className='title'>

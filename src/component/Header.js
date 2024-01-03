@@ -21,7 +21,7 @@ function Header() {
         <div className="header_gnb">
           <div className="header_gnb_list cf">
             <h1>
-              <Link to="#"><img src="./image/index/logo.svg" alt="logo" /></Link>
+              <Link to="/"><img src="./image/index/logo.svg" alt="logo" /></Link>
             </h1>
             <div className="header_gnb_menu">
               <ul className="cf">

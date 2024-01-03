@@ -1,0 +1,34 @@
+@mixin w1240 {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.movie_area_cover {
+  .movie_area {
+    @include w1240();
+    // opacity: 0.7;
+    position: relative;
+    .image_area {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .detail_area {
+      position: absolute;
+      left: 0;
+      bottom: 140px;
+      z-index: 2;
+      h1 {
+        font-size: 56px;
+        font-weight: 600;
+        color: #fff;
+      }
+      p {
+        margin-top: 24px;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  }
+}
