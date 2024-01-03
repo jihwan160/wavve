@@ -6,10 +6,6 @@ import './Detail.scss'
 function Detail() {
   const location = useLocation();
   const movie = location.state.movie;
-  
-
-    
-
 
   return (
     <>
@@ -26,21 +22,7 @@ function Detail() {
             </h1>
             <p>개봉날짜 : {movie.release_date}</p>
             <p>평점 : {movie.vote_average.toFixed(1)}점</p>
-            <p>장르 : {movie.genre_ids}</p>
-            {/* 878 sf
-                28 액션
-                12 모험
-                14 판타지
-                18 드라마
-                36 역사
-                35 코미디
-                53 스릴러
-                80 범죄
-                10751 가족
-                27 공포
-                9648 미스터리
-                16 애니메이션
-                10402 로맨스 */}
+            <p className='overview'>줄거리 : {movie.overview}</p>
           </div>
           
         </div>
