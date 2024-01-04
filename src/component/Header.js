@@ -11,7 +11,7 @@ function Header() {
             <ul className="cf">
               <li><Link to="#">이벤트</Link></li>
               <li><Link to="#">웨이브온</Link></li>
-              <li><Link to="#">쿠폰·코인<span><img src="./image/down_arrow.png" alt="down_arrow" /></span></Link></li>
+              <li><Link to="#">쿠폰·코인<span><img src="./image/index/down_arrow.png" alt="down_arrow" /></span></Link></li>
               <li><Link to="#">이용권</Link></li>
               <li><Link to="#">로그인</Link></li>
             </ul>
