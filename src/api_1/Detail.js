@@ -20,13 +20,42 @@ function Detail() {
             <h1>
               {movie.title}
             </h1>
-            <p>개봉날짜 : {movie.release_date}</p>
-            <p>평점 : {movie.vote_average.toFixed(1)}점</p>
-            <p className='overview'>줄거리 : {movie.overview}</p>
           </div>
           
         </div>
       </div>
+
+    <div class="movie_bottom_cover">
+      <div class="movie_bottom">
+        <div class="info_tab">
+          <ul>
+            <li><button class="on">상세정보</button></li>
+          </ul>
+        </div>
+        <div class="movie_info cf"> 
+          <div class="thumb_img">
+            <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={`${movie.title}`} />
+          </div>
+          <div class="movie_desc">
+            <h2>{movie.title}</h2>
+            <p>{movie.overview}</p>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>개봉일</th>
+                  <td>{movie.release_date}</td>
+                </tr>
+                <tr>
+                  <th>평점</th>
+                  <td>{movie.vote_average.toFixed(1)}점</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     </>
   )
 }
