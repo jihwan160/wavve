@@ -1,0 +1,125 @@
+@mixin w1240 {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+footer {
+  .footer {
+    .footer_notice {
+      border-bottom: 1px solid #2f2f2f;
+    }
+    .footer_menu {
+      @include w1240();
+      padding: 0 0 100px;
+      color: #717171;
+      position: relative;
+      .footer_link {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        ul {
+          li {
+            float: left;
+            margin-right: 24px;
+            a {
+              display: block;
+              padding: 10px 0;
+              &:hover {
+                color: #1351f9;
+              }
+            }
+            &:nth-child(5) {
+              color: #a5a5a5;
+              font-weight: 700;
+              a {
+                &:hover {
+                  color: #a5a5a5;
+                }
+              }
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .footer_copyright {
+        font-size: 12px;
+        line-height: 20px;
+        span {
+          display: inline-block;
+          border-right: 1px solid #717171;
+          padding-right: 6px;
+          margin-right: 6px;
+          line-height: 11px;
+          .info_link {
+            text-decoration: underline;
+          }
+          a{
+            &:hover {
+              color: #1351f9;
+            }
+          }
+        }
+        .last {
+          border: 0;
+        }
+        address {
+          font-style: normal;
+          display: inline-block;
+          border-right: 1px solid #717171;
+          padding-right: 6px;
+          margin-right: 6px;
+          line-height: 11px;
+        }
+        .copyright {
+          display: block;
+          margin-top: 10px;
+          border: 0;
+        }
+      }
+      .footer_wavveOn {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        height: 40px;
+        .footer_logo {
+          display: inline-block;
+          width: 94px;
+          height: 38px;
+          line-height: 38px;
+          background-color: #252525;
+          img {
+
+          }
+        }
+        #wavve_sel {
+          display: inline-block;
+          width: 225px;
+          height: 38px;
+          padding-left: 13px;
+          margin-right: 10px;
+          line-height: 32px;
+          color: #a5a5a5;
+          border: 1px solid #252525;
+          background: #252525;
+        }
+        .footer_sns {
+          display: inline-block;
+          vertical-align: middle;
+          a {
+            width: 34px;
+            display: inline-block;
+            padding: 1px 1px;
+            img{
+              width: 100%;
+            }
+          }
+          a+a {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
