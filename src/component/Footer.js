@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.scss'
-
+import { Link } from 'react-router-dom'
 
 function Footer({content}) {
   return (
@@ -12,12 +12,12 @@ function Footer({content}) {
         <div className="footer_menu">
           <div className="footer_link">
             <ul className="cf">
-              <li><a href="#">회사소개</a></li>
-              <li><a href="#">인재채용</a></li>
-              <li><a href="#">서비스 소개</a></li>
-              <li><a href="#">이용약관</a></li>
-              <li><a href="#">개인정보 처리방침</a></li>
-              <li><a href="#">고객센터</a></li>
+              <li><Link to="#">회사소개</Link></li>
+              <li><Link to="#">인재채용</Link></li>
+              <li><Link to="#">서비스 소개</Link></li>
+              <li><Link to="#">이용약관</Link></li>
+              <li><Link to="#">개인정보 처리방침</Link></li>
+              <li><Link to="#">고객센터</Link></li>
             </ul>
           </div>
           <div className="footer_copyright">
@@ -29,10 +29,10 @@ function Footer({content}) {
             <span className="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span>
             <br />
             <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
-            <span className="last">통신판매업 정보 공개 : <a href="#" className="info_link">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span>
+            <span className="last">통신판매업 정보 공개 : <Link to="#" className="info_link">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</Link></span>
             <br />
             <address>서울특별시 영등포구 여의나루로 60 포스트타워 19층</address>
-            <span className="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span>
+            <span className="last">전자우편주소 : <Link to="#">helpdesk@wavve.com</Link></span>
             <span className="copyright">Copyright© 콘텐츠웨이브(주) All rights reserved.</span>
           </div>
           <div className="footer_wavveOn">
@@ -40,7 +40,7 @@ function Footer({content}) {
               <img src={content.f_img1} alt="footer_logo" />
             </div>
             <select name="wavve_sel" id="wavve_sel">
-              <option value="사업자용 웨이브 가입" disabled selected hidden>사업자용 웨이브 가입</option>
+              <option value="사업자용 웨이브 가입" hidden>사업자용 웨이브 가입</option>
               <option value="웨이브온 서비스 소개">웨이브온 서비스 소개</option>
               <option value="웨이브온 PC방 서비스">웨이브온 PC방 서비스</option>
               <option value="웨이브온 도서관 서비스">웨이브온 도서관 서비스</option>
@@ -49,12 +49,12 @@ function Footer({content}) {
               <option value="웨이브온 일반 서비스">웨이브온 일반 서비스</option>
             </select>
             <div className="footer_sns">
-              <a href="#">
+              <Link to="#">
                 <img src={content.f_img2} alt="facebook" />
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="#">
                 <img src={content.f_img3} alt="naver" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

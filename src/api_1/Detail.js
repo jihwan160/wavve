@@ -26,21 +26,21 @@ function Detail() {
         </div>
       </div>
 
-      <div class="movie_bottom_cover">
-        <div class="movie_bottom">
-          <div class="info_tab">
+      <div className="movie_bottom_cover">
+        <div className="movie_bottom">
+          <div className="info_tab">
             <ul>
-              <li><button class="on">상세정보</button></li>
+              <li><button className="on">상세정보</button></li>
             </ul>
           </div>
-          <div class="movie_info cf"> 
-            <div class="thumb_img">
+          <div className="movie_info cf"> 
+            <div className="thumb_img">
               <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={`${movie.title}`} />
             </div>
-            <div class="movie_desc">
+            <div className="movie_desc">
               <h2>{movie.title}</h2>
               <p>{movie.overview}</p>
-              <table class="table">
+              <table className="table">
                 <tbody>
                   <tr>
                     <th>개봉일</th>
