@@ -1,15 +1,15 @@
 import React from 'react'
 import Swiper_img from './Swiper_img';
+import { api_Key } from '../myApi';
+import Fetch_api_1 from '../api_1/Fetch_api_1';
+import Fetch_api_2 from '../api_2/Fetch_api_2';
 
 import './Main.scss'
-import Fetch_api_1 from '../api_1/Fetch_api_1';
-
-import { api_Key } from '../myApi';
 
 function Main() {
 
   const url_1 = `http://api.themoviedb.org/3/trending/movie/week?api_key=${api_Key}&language=ko-KR`
-
+  const url_2 = `https://api.themoviedb.org/3/trending/tv/week?api_key=${api_Key}&language=ko-KR`
   return (
     <main>
       <div className='swiper_img'>
@@ -17,6 +17,9 @@ function Main() {
       </div>
       <div className='api_swiper'>
         <Fetch_api_1 url_1={url_1}/>
+      </div>
+      <div className='api_swiper2'> 
+        <Fetch_api_2 url_2={url_2} />
       </div>
     </main>
   )

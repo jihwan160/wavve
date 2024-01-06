@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { Swiper } from 'swiper/react'
 import { SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
+import { Link } from 'react-router-dom';
 
 import './Fetch_api_1.scss'
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import { Link, useNavigate } from 'react-router-dom';
 
 function Fetch_api_1({url_1}) {
   
