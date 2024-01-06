@@ -16,6 +16,7 @@ header {
           float: right;
           padding: 10px;
           font-size: 1.2rem;
+          cursor: pointer;
         }
       }
     }
@@ -42,6 +43,10 @@ header {
             font-size: 2rem;
             line-height: 74px;
             margin-right: 34px;
+            cursor: pointer;
+            &:first-child {
+              color: #fff;
+            }
           }
         }
       }
