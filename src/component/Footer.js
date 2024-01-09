@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 function Footer({ content }) {
   function notReady(e) {
     e.preventDefault();
+    alert("준비중 입니다 죄송합니다");
   }
   return (
     <footer>
