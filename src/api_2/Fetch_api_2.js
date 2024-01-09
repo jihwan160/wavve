@@ -13,7 +13,7 @@ function Fetch_api_2({url_2}) {
   
   const [tvs, setTvs] = useState([])
   
-  const option = {
+  const option2 = {
     method: "GET",
     headers: {
       'Content-Type': 'application/json; charset=utf-8'
@@ -21,7 +21,7 @@ function Fetch_api_2({url_2}) {
   }
 
   useEffect(() => {
-    fetch(url_2, option)
+    fetch(url_2, option2)
       .then(response => response.json())
       .then(response => {
         setTvs(response.results)
