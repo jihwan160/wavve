@@ -8,7 +8,7 @@ import './Main.scss'
 
 function Main() {
 
-  const url_1 = `https://api.themoviedb.org/3/trending/movie/week?api_key=${api_Key}&language=ko-KR`
+  const url_1 = `http://api.themoviedb.org/3/trending/movie/week?api_key=${api_Key}&language=ko-KR`
   const url_2 = `https://api.themoviedb.org/3/trending/tv/week?api_key=${api_Key}&language=ko-KR`
   return (
     <main>
