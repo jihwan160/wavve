@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: "Noto Sans", sans-serif;
+  background: #1b1b1b;
+  color: #a5a5a5;
+}
+html body #wrap header .header_info {
+  border-bottom: 1px solid #2f2f2f;
+  height: 34px;
+}
+html body #wrap header .header_info .header_info_list {
+  width: 1240px;
+  margin: 0 auto;
+}
+html body #wrap header .header_info .header_info_list ul li {
+  float: right;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+html body #wrap header .header_gnb {
+  width: 1240px;
+  margin: 0 auto;
+  height: 74px;
+  position: relative;
+}
+html body #wrap header .header_gnb .header_gnb_list {
+  width: 40%;
+}
+html body #wrap header .header_gnb .header_gnb_list h1 {
+  float: left;
+  line-height: 74px;
+}
+html body #wrap header .header_gnb .header_gnb_list h1 img {
+  vertical-align: middle;
+}
+html body #wrap header .header_gnb .header_gnb_list .header_gnb_menu {
+  float: right;
+}
+html body #wrap header .header_gnb .header_gnb_list .header_gnb_menu ul li {
+  float: left;
+  font-size: 2rem;
+  line-height: 74px;
+  margin-right: 34px;
+}
+html body #wrap header .header_gnb .header_gnb_list .search {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+@mixin w1240 {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.swiper_img {
+  width: 100%;
+  .swiper {
+    @include w1240();
+    .swiper_slide {
+      border-radius: 12px;
+      overflow: hidden;
+      .img {
+        width: 100%;
+      }
+      .fir_img {
+        position: relative;
+      }
+      .sec_img {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+}

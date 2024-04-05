@@ -1,0 +1,117 @@
+@mixin w1240 {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.movie_area_cover {
+  .movie_area {
+    @include w1240();
+    // opacity: 0.7;
+    position: relative;
+    .image_area {
+      opacity: 0.5;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .detail_area {
+      position: absolute;
+      left: 16px;
+      bottom: 32px;
+      z-index: 2;
+      h1 {
+        font-size: 44px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.movie_bottom_cover {
+  margin-top: 40px;
+  .movie_bottom {
+    .info_tab {
+      @include w1240();
+      margin-bottom: 40px;
+      ul {
+        height: 68px;
+        line-height: 68px;
+        border-bottom: 1px solid #2f2f2f;
+        li {
+          button {
+            color: #fff;
+            height: 67px;
+            font-size: 20px;
+            font-weight: 500;
+            border-bottom: 4px solid transparent;
+          }
+          .on {
+            border-bottom: 4px solid #1351f9;
+          }
+        }
+      }
+    }
+    .movie_info {
+      @include w1240();
+      min-height: 400px;
+      padding-bottom: 60px;
+      .thumb_img {
+        width: 187px;
+        height: 278px;
+        border-radius: 12px;
+        overflow: hidden;
+        float: left;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .movie_desc {
+        width: calc(100% - 211px);
+        margin-left: 24px;
+        float: left;
+        h2{
+          height: 24px;
+          line-height: 24px;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        p {
+          line-height: 24px;
+          font-size: 16px;
+        }
+        .table {
+          margin-top: 24px;
+          width: 100%;
+          font-size: 16px;
+          border-collapse: collapse;
+          tbody {
+            tr {
+              height: 24px;
+              line-height: 24px;
+            }
+            th {
+              width: 76px;
+              text-align: left;
+            }
+            td {
+              width: auto;
+            }
+            th,td {
+              padding-top: 30px;
+            }
+            tr {
+              &:first-child {
+                th,td {
+                  padding-top: 0;
+                }                        
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+
+@mixin w1240 {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+@mixin mainColor {
+  background: #1b1b1b;
+  color: #a5a5a5;
+}
+
+@mixin mainFont {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  body {
+    @include mainFont();
+    @include mainColor();
+    #wrap {
+      header {
+
+        .header_info {
+          border-bottom: 1px solid #2f2f2f;
+          height: 34px;
+          .header_info_list {
+            @include w1240();
+            ul {
+              li {
+                float: right;
+                padding: 10px;
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+
+        .header_gnb {
+          @include w1240();
+          height: 74px;
+          position: relative;
+          .header_gnb_list {
+            width: 40%;
+            h1 {
+              float: left;
+              line-height: 74px;
+              img {
+                vertical-align: middle;
+              }
+            }
+            .header_gnb_menu {
+              float: right;
+              ul {
+                li {
+                  float: left;
+                  font-size: 2rem;
+                  line-height: 74px;
+                  margin-right: 34px;
+                }
+              }
+            }
+            .search {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width:1239px) {
+//   html {
+//     body {
+//       background: red;
+//     }
+//   }
+// }
